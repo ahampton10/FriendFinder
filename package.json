@@ -1,24 +1,28 @@
 {
-    "name": "friendfinder",
-    "version": "1.0.0",
-    "description": "A friend finder app that pairs people with others who have similar interests",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/ahampton10/FriendFinder.git"
-    },
-    "author": "Alex Hampton",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/ahampton10/FriendFinder/issues"
-    },
-    "homepage": "https://github.com/ahampton10/FriendFinder#readme",
-    "dependencies": {
-      "body-parser": "^1.19.0",
-      "express": "^4.17.1",
-      "path": "^0.12.7"
-    }
-  }
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "## Heroku Link: https://mighty-taiga-71667.herokuapp.com/",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node": "^13.6.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahampton10/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahampton10/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/ahampton10/FriendFinder#readme"
+}

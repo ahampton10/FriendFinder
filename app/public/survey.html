@@ -115,7 +115,7 @@
             <option value="4">4 (Agree)</option>
             <option value="5">5 (Strongly Agree)</option>
         </select>
-        <h5><strong>Question 10</strong></h5>S
+        <h5><strong>Question 10</strong></h5>
         <p>I enjoyed this survey!</p>
         <select data-placeholder="" class="browser-default" id="q10">
             <option value="">Choose an option</option>
@@ -130,16 +130,12 @@
           id="submitBtn">Submit</button>
       </div>
     </div>
-    <div class='col s4'>
-      <p><a href='/api/friends'>API Friends List</a>
-    </div>
 
     <div id="modal1" class="modal">
       <div class="modal-content">
         <h4>Meet Your New BFF</h4>
-       <span> <h5 id="matchfName"></h5>
-        <h5 id="matchlName"></h5></span>
-        <img id="matchPic" src="" alt="No Image" width=250px>
+       <span> <h5 id="matchName"></h5>
+        <h5 id="matchName"></h5></span>
       </div>
       <div class="modal-footer">
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
@@ -184,13 +180,13 @@
               $('#q10').val(),
             ]
           };
-
+          console.log(newFriend); 
           var currentURL = window.location.origin;
           $.post(currentURL + "/api/friends", newFriend, function (data) {
-            $("#matchfName").text(data.name);
+            $("#matchName").text(data.name);
 
             $("#matchPic").attr("src", data.profilePic);
-
+console.log(data.name); 
           });
           $('.modal').modal();
           $('#name').val("");
