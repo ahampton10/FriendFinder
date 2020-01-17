@@ -184,9 +184,7 @@
           var currentURL = window.location.origin;
           $.post(currentURL + "/api/friends", newFriend, function (data) {
             $("#matchName").text(data.name);
-
             $("#matchPic").attr("src", data.profilePic);
-console.log(data.name); 
           });
           $('.modal').modal();
           $('#name').val("");

@@ -1,12 +1,11 @@
 {
   "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "## Heroku Link: https://mighty-taiga-71667.herokuapp.com/",
-  "main": "server.js",
+  "description": "An app to help find friends",
+  "main": "index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "node": "^13.6.0",
     "path": "^0.12.7"
   },
   "devDependencies": {},
